@@ -41,11 +41,11 @@ jobs:
 
       - name: Build Wk9/AndroidProgrammingQuiz-CrossPlatformCI
         continue-on-error: true
-        working-directory: Wk9/AndroidProgrammingQuiz-CrossPlatformCI
+        working-directory: Assignment-1
         run: |
           bash build_web.sh
-          mkdir -p ../../site/Wk9/AndroidProgrammingQuiz-CrossPlatformCI
-          cp -r web/. ../../site/Wk9/AndroidProgrammingQuiz-CrossPlatformCI/
+          mkdir -p ../../site/Assignment-1
+          cp -r web/. ../../site/Assignment-1/
       
       - name: Generate index.html
         run: |
@@ -66,7 +66,7 @@ jobs:
 
             <h2>Android Programming Quiz</h2>
             <p>A cross-platform CI built for WebGL.</p>
-            <p><a href="Wk9/AndroidProgrammingQuiz-CrossPlatformCI/">Launch the demo</a></p>
+            <p><a href="Assignment-1/">Launch the demo</a></p>
           </body>
           </html>
           HTML
