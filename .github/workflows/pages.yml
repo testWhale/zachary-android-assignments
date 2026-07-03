@@ -39,6 +39,14 @@ jobs:
           mkdir -p ../../site/Chapter2/2-OpenGLES3_Primitives-Modern
           cp -r web/. ../../site/Chapter2/2-OpenGLES3_Primitives-Modern/
 
+      - name: Build Wk9/AndroidProgrammingQuiz-CrossPlatformCI
+        continue-on-error: true
+        working-directory: Wk9/AndroidProgrammingQuiz-CrossPlatformCI
+        run: |
+          bash build_web.sh
+          mkdir -p ../../site/Wk9/AndroidProgrammingQuiz-CrossPlatformCI
+          cp -r web/. ../../site/Wk9/AndroidProgrammingQuiz-CrossPlatformCI/
+      
       - name: Generate index.html
         run: |
           cat > site/index.html << 'HTML'
@@ -55,6 +63,10 @@ jobs:
             <h2>Chapter 2 — Primitives</h2>
             <p>OpenGL primitives: point, line, and triangle with their variations.</p>
             <p><a href="Chapter2/2-OpenGLES3_Primitives-Modern/">Launch the demo</a></p>
+
+            <h2>Android Programming Quiz</h2>
+            <p>A cross-platform CI built for WebGL.</p>
+            <p><a href="AndroidProgrammingQuiz/">Launch the demo</a></p>
           </body>
           </html>
           HTML
