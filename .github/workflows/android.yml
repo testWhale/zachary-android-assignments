@@ -15,7 +15,7 @@ jobs:
       matrix:
         include:
           - { project: Chapter2/2-OpenGLES3_Primitives-Modern, name: 2-OpenGLES3_Primitives-Modern }
-
+          - { project: Wk9/AndroidProgrammingQuiz-CrossPlatformCI, name: AndroidProgrammingQuiz-CrossPlatformCI }
     steps:
       - uses: actions/checkout@v4
 

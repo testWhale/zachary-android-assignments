@@ -18,8 +18,10 @@ jobs:
             - windows-latest
           project:
             - Chapter2/2-OpenGLES3_Primitives-Modern
+            - Wk9/AndroidProgrammingQuiz-CrossPlatformCI
           name:
             - 2-OpenGLES3_Primitives-Modern
+            - AndroidProgrammingQuiz-CrossPlatformCI
 
     steps:
       - uses: actions/checkout@v4
