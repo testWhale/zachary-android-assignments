@@ -66,7 +66,7 @@ jobs:
 
             <h2>Android Programming Quiz</h2>
             <p>A cross-platform CI built for WebGL.</p>
-            <p><a href="AndroidProgrammingQuiz/">Launch the demo</a></p>
+            <p><a href="Wk9/AndroidProgrammingQuiz-CrossPlatformCI/">Launch the demo</a></p>
           </body>
           </html>
           HTML
