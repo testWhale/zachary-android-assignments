@@ -29,15 +29,6 @@ jobs:
       - name: Create site directory
         run: mkdir -p site
 
-      # Inject -s MIN_WEBGL_VERSION=2 at runtime so the GLSL ES 3.00 shader parser
-      # is used, without modifying any source files.
-      - name: Build Chapter2/2-OpenGLES3_Primitives-Modern
-        continue-on-error: true
-        working-directory: Chapter2/2-OpenGLES3_Primitives-Modern
-        run: |
-          sed 's/-s USE_WEBGL2=1 \\/-s USE_WEBGL2=1 \\\n    -s MIN_WEBGL_VERSION=2 \\/' build_web.sh | bash
-          mkdir -p ../../site/Chapter2/2-OpenGLES3_Primitives-Modern
-          cp -r web/. ../../site/Chapter2/2-OpenGLES3_Primitives-Modern/
 
       - name: Build Assignment-1
         continue-on-error: true

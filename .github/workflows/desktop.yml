@@ -17,11 +17,11 @@ jobs:
             - ubuntu-latest
             - windows-latest
           project:
-            - Chapter2/2-OpenGLES3_Primitives-Modern
-            - Wk9/AndroidProgrammingQuiz-CrossPlatformCI
+            - Assignment-1
+            - Assignment-2
           name:
-            - 2-OpenGLES3_Primitives-Modern
-            - AndroidProgrammingQuiz-CrossPlatformCI
+            - Assignment-1
+            - Assignment-2
 
     steps:
       - uses: actions/checkout@v4
