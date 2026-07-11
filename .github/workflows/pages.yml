@@ -47,6 +47,14 @@ jobs:
           mkdir -p ../site/Assignment-1
           cp -r web/. ../site/Assignment-1/
       
+      - name: Build Assignment-2
+        continue-on-error: true
+        working-directory: Assignment-2
+        run: |
+          bash build_web.sh
+          mkdir -p ../site/Assignment-2
+          cp -r web/. ../site/Assignment-2/
+
       - name: Generate index.html
         run: cp .github/site/index.html site/index.html
 

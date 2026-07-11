@@ -1,0 +1,30 @@
+# ===========================================================================
+# Generated build output - never commit any of this (assignment core2 rubric).
+# ===========================================================================
+
+# Desktop CMake build dir
+/build_desktop/
+/build*/
+
+# Web (Emscripten) build output + fetched GLM source
+/web/
+/external/
+
+# Android / Gradle / Android Studio
+android/.gradle/
+android/build/
+android/app/.gradle/
+android/app/.cxx/
+android/app/build/
+android/local.properties
+android/app/local.properties
+.gradle/
+.idea/
+android/.idea/
+android/app/.idea/
+android/app/src/.idea/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
