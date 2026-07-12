@@ -18,10 +18,10 @@ jobs:
             - windows-latest
           project:
             - Assignment-1
-            - Assignment-2
+            - Assignment-2-3DFan
           name:
             - Assignment-1
-            - Assignment-2
+            - Assignment-2-3DFan
 
     steps:
       - uses: actions/checkout@v4

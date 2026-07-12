@@ -15,7 +15,7 @@ jobs:
       matrix:
         include:
           - { project: Assignment-1, name: Assignment-1 }
-          - { project: Assignment-2, name: Assignment-2 }
+          - { project: Assignment-2-3DFan, name: Assignment-2-3DFan }
     steps:
       - uses: actions/checkout@v4
 
